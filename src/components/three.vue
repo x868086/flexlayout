@@ -1,0 +1,81 @@
+<template>
+    <div id="container">
+            <div class="head">head</div>
+            <div class="main">
+                <div class="content">content</div>
+                <div class="nav">nav</div>
+                <div class="aside">aside</div>
+            </div>
+            <div class="footer">footer</div>
+
+    </div>
+
+</template>
+
+
+<script>
+    export default {}
+
+</script>
+
+<style scoped>
+    html,body,div{
+        margin:0px;
+        padding:0px;
+        height:100%;
+        text-align:center;
+        border-radius:3px;
+    }
+
+    #container{
+        display:flex;
+        flex-direction:column;
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    .head{
+    height:90px;
+        background:#ccc;
+        margin:10px 0px 20px 0px;
+        box-shadow:3px 3px 3px #ccc;
+    }
+
+    .footer{
+        height:50px;
+        background:#ccc;
+        margin-top:20px;
+        box-shadow:3px 3px 3px #ccc;
+    }
+
+    .main{
+        display:flex;
+        justify-content:space-between;
+    }
+
+    .nav{
+        width:160px;
+        height:400px;
+        background:#ccc;
+        order:-1;
+        box-shadow:3px 3px 3px #ccc;
+    }
+
+    .aside{
+        width:120px;
+        height:400px;
+        background:#ccc;
+        box-shadow:3px 3px 3px #ccc;
+    }
+
+    .content{
+        width:100%;
+        height:550px;
+        margin-left:20px;
+        margin-right:20px;
+        background:#ccc;
+        box-shadow:3px 3px 3px #ccc;
+    }
+
+
+</style>
