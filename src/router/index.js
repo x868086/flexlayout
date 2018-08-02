@@ -2,9 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import absolute from '@/components/absolute.vue';
-import flexgrid from '@/components/flexgrid.vue';
+import responsive from '@/components/responsive.vue';
 import media from '@/components/media.vue';
 import three from '@/components/three.vue';
+import grid from '@/components/grid.vue';
 
 Vue.use(Router)
 
@@ -23,15 +24,9 @@ const router = new Router({
     },
     
       {
-      path: '/flexgrid',
-      name: 'flexgrid',
-      component: flexgrid
-    },
-    
-      {
-      path: '/flexgrid',
-      name: 'flexgrid',
-      component: flexgrid
+      path: '/responsive',
+      name: 'responsive',
+      component: responsive
     },
 
     {
@@ -44,6 +39,12 @@ const router = new Router({
       path: '/three',
       name: 'three',
       component: three
+    },
+    
+      {
+      path: '/grid',
+      name: 'grid',
+      component: grid
     }
 
     
